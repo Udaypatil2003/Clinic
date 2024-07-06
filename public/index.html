@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVCMC Login</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Register</title>
+</head>
+<body>
+    <section class="header">
+      <div class="logo">
+        <img src="../dashboard/logo.jpg" class="logo-img">
+        <h2>VVCMC<span>Hospital</span></h2>
+     </div>
+      <button class="button-login" id="form-open" onClick="openLogin()">Login</button>
+    </section>
+    <section class="home-img">
+    </section>
+    <!-- <p class="img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere ad ipsa totam repellat. Provident sapiente blanditiis in exercitationem ex, voluptates impedit ducimus atque. Blanditiis libero odio aspernatur culpa aliquam.</p> -->
+    </style>
+    <section class="home" id="login_container">
+        <div class="form_container">
+          <i class="uil uil-times form_close" onclick="loginClose()"></i>
+          <!-- Login From -->
+          <div class="form login_form">
+            <form action="../dashboard/dashboard.html">
+              <h2>Login<span></span></h2>
+              <div class="input_box">
+                <i class="uil uil-envelope-alt email"></i>
+                <input type="text" placeholder="Enter your UserID" required />
+              </div>
+              <div class="input_box">
+                <i class="uil uil-lock password"></i> 
+                <input type="password" placeholder="Enter your password" required />  
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+  
+              <div class="option_field">
+                <span class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Remember me</label>
+                </span>
+                <a href="#" class="forgot_pw">Forgot password?</a>
+              </div>
+  
+              <button class="button">Login Now</button>
+  
+              <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+            </form>
+          </div>
+  
+          <!-- Signup From -->
+          <div class="form signup_form">
+            <form action="#">
+              <h2>Signup</h2>
+  
+              <div class="input_box">
+                <i class="uil uil-envelope-alt email"></i>
+                <input type="email" placeholder="Enter your email" required />
+              </div>
+              <div class="input_box">
+                <i class="uil uil-lock password"></i>
+                <input type="password" placeholder="Create password" required />
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <div class="input_box">
+                <i class="uil uil-lock password"></i>
+                <input type="password" placeholder="Confirm password" required />
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+  
+              <button class="button">Signup Now</button>
+  
+              <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+            </form>
+          </div>
+        </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addpatient.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Register</title>
+</head>
+<body>
+    <section class="header">
+        <div class="logo">
+            <i id="menu-icon" class="ri-menu-line icon icon-0 menu"></i>
+            <h2>VVCMC<span>Hospital</span></h2>
+        </div>
+        <div class="search--notification--profile">
+            <div class="search">
+                <input type="text" placeholder="Search Schedule..">
+                <button><i class="ri-search-2-line"></i></button>
+            </div>
+            <div class="notification--profile">
+                <div class="picon lock">
+                    <i class="ri-lock-line"></i>
+                </div>
+                <div class="picon bell">
+                    <i class="ri-notification-2-line"></i>
+                </div>
+                <div class="picon chat">
+                    <i class="ri-wechat-2-line"></i>
+                </div>
+                <div class="picon profile">
+                    <img src="assets/images/profile.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div id="sidebar" class="sidebar">
+            <ul class="sidebar--items">
+                <li>
+                    <a href="../dashboard/dashboard.html" id="dashboard-tab">
+                        <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
+                        <span class="sidebar--item">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="schedule-tab">
+                        <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
+                        <span class="sidebar--item">Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="reliable-tab">
+                        <span class="icon icon-3"><i class="ri-user-2-line"></i></span>
+                        <span class="sidebar--item" style="white-space: nowrap;">Reliable Doctor</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="patient-tab">
+                        <span class="icon icon-4"><i class="ri-user-line"></i></span>
+                        <span class="sidebar--item">Patients</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="activity-tab">
+                        <span class="icon icon-5"><i class="ri-line-chart-line"></i></span>
+                        <span class="sidebar--item">Activity</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="support-tab">
+                        <span class="icon icon-6"><i class="ri-customer-service-line"></i></span>
+                        <span class="sidebar--item">Support</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main--content">
+            <div class="title">
+                <h2 class="section--title">Registration</h2>
+                  <button class="add" onclick="handleAddPatient()"><i class="ri-add-line"></i>Save
+                   </button>
+            </div>
+            <div class="register">
+                        <div class="input_box">
+                            <i class="uil uil-user"></i>
+                            <input type="text" id="name" placeholder="Enter name" required />
+                        </div>
+                          <div class="input_box">
+                            <i class="uil uil-calendar-alt"></i>
+                            <label for="dob"></label>
+                            <input type="date" id="dob" name="dob" required>
+                          </div>
+                          <div class="input_box">
+                            <i class="fa-solid fa-venus-mars"></i>
+                            <select id="gender" required>
+                              <option value="" disabled selected>Select your gender</option>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                              <option value="Other">Other</option>
+                            </select>
+                          </div>
+                          <div class="input_box">
+                            <i class="uil uil-map-marker"></i>
+                            <input type="text" id="address" placeholder="Enter Address" required />
+                          </div>
+                          <div class="input_box">
+                            <i class="fa-solid fa-id-card"></i>
+                            <input type="text" id="abhaNo" placeholder="ABHA NO." required />
+                          </div>
+                          <div class="input_box">
+                            <i class="uil uil-stethoscope"></i>
+                            <input type="text" id="disease" placeholder="Disease/Symptoms" required />
+                          </div>
+                    </form>
+            </div>
+        </div>  
+    </section>
+    <script src="addpatient.js"></script>
+</body>
+</html>

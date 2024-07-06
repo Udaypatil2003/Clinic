@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="patient.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Patient</title>
+</head>
+<body>
+    <section class="header">
+        <div class="logo">
+            <i class="ri-menu-line icon icon-0 menu"></i>
+            <h2>VVCMC<span>Hospital</span></h2>
+        </div>
+        <div class="search--notification--profile">
+            <div class="search">
+                <input type="text" placeholder="Search Scdule..">
+                <button><i class="ri-search-2-line"></i></button>
+            </div>
+            <div class="notification--profile">
+                <div class="picon lock">
+                    <i class="ri-lock-line"></i>
+                </div>
+                <div class="picon bell">
+                    <i class="ri-notification-2-line"></i>
+                </div>
+                <div class="picon chat">
+                    <i class="ri-wechat-2-line"></i>
+                </div>
+                <div class="picon profile">
+                    <img src="assets/images/profile.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="sidebar">
+            <ul class="sidebar--items">
+                <li>
+                    <a href="../dashboard/dashboard.html" id="dashboard-tab">
+                        <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
+                        <span class="sidebar--item">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="schedule-tab">
+                        <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
+                        <span class="sidebar--item">Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="Reliable-tab">
+                        <span class="icon icon-3"><i class="ri-user-2-line"></i></span>
+                        <span class="sidebar--item" style="white-space: nowrap;">Reliable Doctor</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="patient-tab">
+                        <span class="icon icon-4"><i class="ri-user-line"></i></span>
+                        <span class="sidebar--item">Patients</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="Activity-tab">
+                        <span class="icon icon-5"><i class="ri-line-chart-line"></i></span>
+                        <span class="sidebar--item">Activity</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="support-tab">
+                        <span class="icon icon-6"><i class="ri-customer-service-line"></i></span>
+                        <span class="sidebar--item">Support</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main--content">
+            <div class="recent--patients">
+                <div class="title">
+                    <h2 class="section--title"> Patients</h2>
+                    <div class="search">
+                        <input type="text" name="" id="myInput" placeholder="Patient name" onkeyup="searchFun()">
+                        <button><i class="ri-search-2-line"></i></button>
+                    </div>
+                    <button class="add" onclick="handleAddPatient()"><i class="ri-add-line"></i>Add Patient</button>
+                    </div>
+                    
+                       <div class="table">
+                        <table id="myTable">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date in</th>
+                                    <th>Gender</th>
+                                    <th>Age</th>
+                                    <th>Mobile NO.</th>
+                                    <th>ABHA NO.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Vikrant Gharat</td>
+                                    <td>30/07/2022</td>
+                                    <td>Male</td>
+                                    <td>61kg</td>
+                                    <td>1234567890</td>
+                                    <td>1234567890</td>
+                                </tr>
+                                <tr>
+                                    <td>Rohit Macchi</td>
+                                    <td>30/07/2022</td>
+                                    <td>Male</td>
+                                    <td>54kg</td>
+                                    <td>1234567890</td>
+                                    <td>1234567890</td>
+                                </tr>
+                                <tr>
+                                    <td>Jeet Vaze</td>
+                                    <td>29/07/2022</td>
+                                    <td>Male</td>
+                                    <td>56kg</td>
+                                    <td>1234567890</td>
+                                    <td>1234567890</td>
+                                </tr>
+                                <tr>
+                                    <td>Uday Patil</td>
+                                    <td>29/07/2022</td>
+                                    <td>Male</td>
+                                    <td>80kg</td>
+                                    <td>1234567890</td>
+                                    <td>1234567890</td>
+                                </tr>
+                                <tr>
+                                    <td>Nilesh Yadav</td>
+                                    <td>29/07/2022</td>
+                                    <td>Male</td>
+                                    <td>55kg</td>
+                                    <td>1234567890</td>
+                                    <td>1234567890</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Dipak Pawar</td>
+                                    <td>28/07/2022</td>
+                                    <td>Male</td>
+                                    <td>65kg</td>
+                                    <td>1234567890</td>
+                                    <td>1234567890</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <script src="patient.js"></script>
+</body>
